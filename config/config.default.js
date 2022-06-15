@@ -22,6 +22,7 @@ module.exports = appInfo => {
   const userConfig = {
     // myAppName: 'egg',
     view: {
+      defaultViewEngine: 'ejs',
       maping: {
         '.html': 'ejs',
       },

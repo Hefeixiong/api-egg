@@ -40,7 +40,7 @@ class ArticleContorller extends Contorller {
     }
   }
 
-  async datail() {
+  async detail() {
     const { ctx } = this;
     const resData = await ctx.service.article.detail(ctx.query.id);
     if (resData) {
