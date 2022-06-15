@@ -21,6 +21,20 @@ module.exports = appInfo => {
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
+    view: {
+      maping: {
+        '.html': 'ejs',
+      },
+    },
+    mysql: {
+      client: {
+        host: '47.103.53.54',
+        port: '3306',
+        user: 'root',
+        password: '123456',
+        database: 'node-server',
+      },
+    },
   };
 
   return {
