@@ -40,7 +40,7 @@ class ArticleService extends Service {
     }
     const { app } = this;
     try {
-      const getDetail = await app.mysql.get('acticle', { id });
+      const getDetail = await app.mysql.get('article', { id });
       return getDetail;
     } catch (error) {
       console.log(error);
@@ -56,6 +56,7 @@ class ArticleService extends Service {
     const { app } = this;
     try {
       const deleteActicle = await app.mysql.delete('article', { id });
+      console.log(deleteActicle);
       return deleteActicle;
     } catch (error) {
       console.log(error);

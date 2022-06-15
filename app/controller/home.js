@@ -1,5 +1,6 @@
 'use strict';
 
+const Cookies = require('cookies');
 const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
@@ -9,6 +10,7 @@ class HomeController extends Controller {
     // 从服务中获取数据
     const data = await ctx.service.test.index();
     // ctx.body = data;
+    console.log(Cookies.get('csrfToken'));
 
     // 渲染模板（服务端渲染）
     await ctx.render('index.test.html', {

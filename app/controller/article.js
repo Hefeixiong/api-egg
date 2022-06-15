@@ -10,6 +10,7 @@ class ArticleContorller extends Contorller {
       ...ctx.request.body,
       createTime: moment().format('YYYY-MM-DD HH:mm:ss'),
     };
+    console.log(createData);
     const res = await ctx.service.article.create(createData);
     if (res) {
       ctx.body = {
@@ -67,7 +68,7 @@ class ArticleContorller extends Contorller {
     } else {
       ctx.body = {
         status: 500,
-        errMsg: '查询文章列表失败',
+        errMsg: '删除文章列表失败',
       };
     }
   }
