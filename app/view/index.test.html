@@ -10,7 +10,7 @@
   <h1>这是首页内容</h1>
   <!-- 接收参数 -->
   <p>id: <%=res.id%></p>
-  <p>name: <%=res.name%></p>
+  <p>name: <%=res.title%></p>
   <!-- 渲染列表 -->
   <ul class="lists">
     <%for(var i=0;i<list.length;i++){%>
@@ -20,7 +20,8 @@
   <!-- 渲染图片 -->
   <img src="/public/images/koala.png" alt="koala" srcset="">
   <script>
-    const index = () => {
+    const index = (res) => {
+      console.log(res)
       alert('!!!!!')
     }
   </script>
