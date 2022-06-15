@@ -34,6 +34,8 @@ module.exports = appInfo => {
         password: '123456',
         database: 'node-server',
       },
+      app: true,
+      agent: false,
     },
   };
 
