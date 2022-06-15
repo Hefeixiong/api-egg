@@ -9,10 +9,11 @@ class Test extends Service {
     const data = await app.mysql.select('article');
     // const data = await app.mysql.query('select * from article');
     console.log(data);
-    return {
-      id: '123',
-      name: '测试',
-    };
+    // return {
+    //   id: '123',
+    //   name: '测试',
+    // };
+    return data;
   }
 }
 
